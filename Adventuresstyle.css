@@ -1,0 +1,142 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: blue;
+}
+
+nav ul li {
+	position: relative;
+}
+
+nav ul li a {
+	display: inline-block;
+	color: white;
+	font-size: 14px;
+	padding: 22px 14px;
+	text-decoration: none;
+	transition: width .3s;
+	content: '';
+}
+
+nav ul li a::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: width .3s;
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+	transition: width .3s;
+}
+
+nav ul li ul {
+	display: none;
+	position: absolute;
+	background-color: blue;
+	padding: 10px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+nav ul li:hover ul{
+	display: block;
+}
+
+nav ul li ul li {
+	width: 180px;
+	border-radius: 4px;
+}
+
+nav ul li ul li a {
+	padding: 8px 14px;
+}
+
+body {
+	background-color: green;
+	margin-bottom: 40px;
+}
+
+.titleofmylife {
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 24px;
+}
+
+.wsite-logotitle a {
+	color: white;
+	font-family: 'Raleway';
+	font-weight: 500;
+	font-size: 22px;
+	text-transform: uppercase;
+	list-style: none;
+	text-decoration: none;
+}
+
+#wsite-title {
+	font-family: "Architects Daughter"
+		!important;
+	color: white !important;
+	font-weight: bold !important;
+	text-transform: none !important;
+	list-style: none !important;
+}
+
+#wsite-logotitle::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #fff;
+	transition: width .3s;
+}
+
+#wsite-logotitle:hover::after {
+	width: 100%;
+	transition: width .3s;
+}
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+}
+
+.nav-links li {
+	list-style: none;
+}
+
+.nav-links a {
+	color: white;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.nav-links {
+	width: 60%;
+}
+
+.Hidden {
+	height: 100%;
+    min-height: 800px;
+    margin-right: 100px;
+    width: 100%;
+    padding-right: 100px;
+    background: transparent;
+}
+
+body {
+	overflow-x: hidden;
+}
